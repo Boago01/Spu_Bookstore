@@ -1,0 +1,110 @@
+@import url('base.css'); 
+/* General Styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    z-index: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 3px solid #f39c12; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+/* Heading */
+h1 {
+    color: #e74c3c;  
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Label */
+label {
+    color: #e74c3c; 
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="password"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+.button {
+    color: white;
+    background: linear-gradient(to right, #e74c3c, #c0392b); 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    transform: scale(1.02);
+}
+
+/* Redirect Link */
+p.redirect {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+p.redirect a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p.redirect a:hover {
+    color: #c0392b;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

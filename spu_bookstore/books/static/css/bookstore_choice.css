@@ -1,0 +1,70 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+
+html, body {
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 120px auto 40px;
+    padding: 20px;
+    background-color: #fff5f0;
+    border: 3px solid #f39c12;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+/* ====== Buttons ====== */
+.choice-button {
+    display: block;
+    width: 95%; 
+    margin: 15px auto; 
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.choice-button i {
+    margin-right: 10px;
+}
+
+.choice-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.02);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .choice-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

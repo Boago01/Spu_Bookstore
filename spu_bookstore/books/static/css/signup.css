@@ -1,0 +1,109 @@
+@import url('base.css');
+
+/* General Page Layout */
+body {
+    background-color: #fff5f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    z-index: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 3px solid #f39c12; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #e74c3c; 
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e74c3c; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #e67e22; 
+    outline: none;
+}
+
+/* Button */
+.button {
+    padding: 12px;
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    transform: scale(1.02);
+}
+
+/* Additional Links */
+p.redirect {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+p.redirect a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p.redirect a:hover {
+    color: #c0392b;
+}

@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    background-color: #f8f8f8;
+}
+
+.text-center{
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74c3c; /* Red */
+    margin-bottom: 10px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff5f0;
+    border: 3px solid #f39c12; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #e74c3c; 
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Book List */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Book Item Card */
+.book-item {
+    width: 300px;
+    border: 1px solid #f39c12;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fffaf5; 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Book Titles */
+.book-item h2 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: #e74c3c; 
+}
+
+/* Book Details */
+.book-item p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 16px;
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+
+.add-to-cart-btn:focus {
+    outline: none;
+}
+.add-to-cart-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.03);
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookstore Choice</title>
+    <link rel="stylesheet" href="{% static 'css/bookstore_choice.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+   
+    {% include 'books/navbar.html' %}
+
+
+    
+    <div class="container">
+        <h1>What would you like to do?</h1>
+        <a href="{% url 'buy_books' %}" class="choice-button">
+            <i class="fas fa-book-open"></i> Buy Books
+        </a>
+        <a href="{% url 'sell_books' %}" class="choice-button">
+            <i class="fas fa-tags"></i> Sell Books
+        </a>
+    </div>
+
+</body>
+</html>
